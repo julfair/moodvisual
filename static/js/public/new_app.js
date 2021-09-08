@@ -1,3 +1,5 @@
+let loudness;
+
 $(document).ready(() => {
    
     // alert('Javascript loaded'); 
@@ -56,6 +58,7 @@ $(document).ready(() => {
                                         <p> Time_signature: ${res.time_signature} </p>
                                         </p>         
                                     </div>`);
+                                    loudness = res.loudness
                                     // res should return dictionary
                                     // track = {'name':name, 'album':album, 'artist':artist, "danceability": danceability, "energy": energy, 'loudness': loudness, 'tempo': tempo, 'time_signature':time_signature}
                                     // pass dictionary into new rerender
