@@ -1,25 +1,106 @@
-.hidden {
-    display: none;
+/* @import "https://fonts.googleapis.com/css?family=LAto:100"; */
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Lato", Arial, sans-serif;
+} */
+
+html {
+    height:100%;
   }
+
+body{
+    /* width: 100%;
+    height: 100%; */
+    /* color: #fff; */
+
+    /*Frantic*/
+    /* background: rgb(251,63,63);
+    background: radial-gradient(circle, rgba(251,63,63,1) 1%, rgba(156,107,228,1) 27%, rgba(173,192,78,1) 68%, rgba(252,70,107,1) 100%); */
+
+    /*Energetic*/
+    /* background: rgb(63,228,251);
+    background: radial-gradient(circle, rgba(63,228,251,1) 1%, rgba(226,228,107,1) 27%, rgba(173,192,78,1) 68%, rgba(252,70,107,1) 100%);    */
   
-  /** SPOTIFY BUTTON  **/
-  .btn--login {
-    background-color: transparent;
-    border-radius: 2em;
-    border: 0.2em solid #1ecd97;
-    color: #1ecd97;
-    cursor: pointer;
-    font-size: 3vmin;
-    padding: 0.7em 1.5em;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
-  }
-  
-  .btn:hover {
-    background: #1ecd97;
-    color: #333;
-  }
-  
-  .btn--login {
-    margin: 0 auto;
-  }
+    /*Sad*/
+    /* background: rgb(21,254,249);
+    background: radial-gradient(circle, rgba(21,254,249,1) 0%, rgba(11,31,119,1) 28%, rgba(0,145,252,1) 37%, rgba(4,187,255,1) 52%, rgba(3,135,251,1) 61%, rgba(106,101,171,1) 73%, rgba(160,255,254,1) 100%); */
+
+    /*Depression*/
+    /* background: rgb(198,187,252);
+    background: radial-gradient(circle, rgba(198,187,252,1) 22%, rgba(169,164,193,1) 44%, rgba(154,142,203,1) 57%, rgba(25,22,18,1) 92%); */
+
+
+    /*Calm*/
+    background: rgb(72,107,8);
+    background: radial-gradient(circle, rgba(72,107,8,1) 0%, rgba(100,156,88,1) 24%, rgba(205,221,113,1) 41%, rgba(179,211,197,1) 65%, rgba(205,221,113,1) 100%);
+
+    /*Contentment*/
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+
+    /*Happy*/
+    /* background: rgb(255,155,155);
+    background: radial-gradient(circle, rgba(255,155,155,1) 1%, rgba(216,232,90,1) 27%, rgba(224,183,246,1) 68%, rgba(230,189,255,1) 100%); */
+   
+    /*Exuberant*/
+    /* background: rgb(251,193,63);
+    background: radial-gradient(circle, rgba(251,193,63,1) 0%, rgba(221,144,217,1) 28%, rgba(244,7,133,1) 37%, rgba(248,255,151,1) 52%, rgba(151,255,240,1) 61%, rgba(106,101,171,1) 73%, rgba(252,70,107,1) 100%); */
+    position: fixed;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    position: relative;
+    animation: colorChange 5s infinite alternate linear;
+    /* animation: change 30s ease infinite; */
+}
+
+/* @keyframes change {
+
+0%{
+    background-position: 0 50%;
+}
+
+50%{
+    background-position: 80% 50%;
+}
+
+100%{
+    background-position: 0 50%;
+}
+
+}   */
+
+@keyframes colorChange {
+    from { /* radial-gradient(farthest-corner at top right, ..) */
+      background-position:left top;
+      background-size:200% 100%;
+    
+    }
+    49.9% {
+      background-position:left top;  
+    }
+    50% { /* radial-gradient(farthest-corner at top center, ..) */
+      background-size:100% 100%;
+    }
+    50.1% {
+      background-position:right top; 
+    }
+    to { /* radial-gradient(farthest-corner at top left, ..) */
+      background-position:right top;
+      background-size:200% 100%;
+    }
+   }
